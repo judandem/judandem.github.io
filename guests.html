@@ -26,6 +26,7 @@
       <h2>Recommended Accommodations</h2>
       <p>
         <span>Holiday Inn Vanderbilt</span> (<a href="http://www.ihg.com/holidayinn/hotels/us/en/nashville/bnavb/hoteldetail?qAAR=6CBARC&qAdlt=1&qBrs=6c.hi.ex.rs.ic.cp.in.sb.cw.cv&qChld=0&qFRA=1&qGRM=0&qPSt=0&qRRSrt=rt&qRms=1&qRpn=1&qRpp=10&qRtP=6CBARC&qSHp=1&qSmP=3&qSrt=sBR&qWch=0&srb_u=1">Reservations</a>)(<a href="http://www.tripadvisor.com/Hotel_Review-g55229-d98180-Reviews-Holiday_Inn_Nashville_Vanderbilt_Downtown-Nashville_Tennessee.html">Reviews, If that's your thing</a>)<br>
+        <span>($149/night if you say "Henninger/Stephenson")</span>
         2613 West End Ave<br>
         Nashville, TN 37203<br>
         (Approx 1.5 miles to the church)
@@ -60,9 +61,10 @@
         </script>
       </div>
       <p>
-      <span>Embassy Suites Cool Springs</span> (<a href="http://embassysuites3.hilton.com/en/hotels/tennessee/embassy-suites-nashville-south-cool-springs-BNAFLES/index.html">Reservations</a>)(<a href="http://www.tripadvisor.com/Hotel_Review-g55055-d224332-Reviews-Embassy_Suites_Nashville_South_Cool_Springs-Franklin_Tennessee.html">Reviews</a>)<br>
-      820 Crescent Centre Dr.<br>
-      Nashville, TN 37067<br>
+      <span>Marriott Cool Springs</span> (<a href="http://www.marriott.com/hotels/travel/bnacs-franklin-marriott-cool-springs/">Reservations</a>)(<a href="http://www.tripadvisor.com/Hotel_Review-g55055-d104780-Reviews-Franklin_Marriott_Cool_Springs-Franklin_Tennessee.html">Reviews</a>)<br>
+      <span>($109/night if you say "Henninger/Stephenson")</span>
+      700 Cool Springs Blvd. <br>
+      Franklin, TN, 37067<br>
       (Approx 18 miles to the church)
       </p>
       <div class="height200" style="overflow:hidden;">
@@ -75,17 +77,17 @@
                 var init_map = function() {
                     var myOptions = {
                         zoom: 9,
-                        center: new google.maps.LatLng(35.944292, -86.81383699999998),
+                        center: new google.maps.LatLng(35.9474271, -86.80654400000003),
                         mapTypeId: google.maps.MapTypeId.ROADMAP
                     };
 
                     var map = new google.maps.Map(document.getElementById("gmap_canvas_4"), myOptions);
                     var marker = new google.maps.Marker({
                         map: map,
-                        position: new google.maps.LatLng(35.944292, -86.81383699999998)
+                        position: new google.maps.LatLng(35.9474271, -86.80654400000003)
                     });
                     var infowindow = new google.maps.InfoWindow({
-                      content: "<span style='height:auto !important; display:block; white-space:nowrap; overflow:hidden !important;'><strong style='font-weight:400;'>Embassy Suites (Cool Springs)</strong><br>820 Crescent Centre Dr.<br>37067 Nashville, TN</span>"
+                      content: "<span style='height:auto !important; display:block; white-space:nowrap; overflow:hidden !important;'><strong style='font-weight:400;'>Marriott (Cool Springs)</strong><br>700 Cool Springs Blvd.<br>37067 Franklin, TN</span>"
                     });
                     google.maps.event.addListener(marker, "click", function () {
                         infowindow.open(map, marker);
