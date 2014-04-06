@@ -1,3 +1,61 @@
+@media (max-device-height : 568px) and
+       (device-width : 320px) and
+       (orientation : portrait) {
+
+  body.home > div {
+    width: 100%;
+    font-size: 34px;
+    margin-left: -50%;
+    margin-top: 33%;
+  }
+  body nav {
+    float: none;
+    margin: 20px 0 0 0;
+  }
+  body nav i {
+    position: absolute;
+    display: block;
+    background-image: url(../images/threelines.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    top: 0%;
+    margin-left: -15px;
+  }
+  body nav ul {
+    display: none;
+    margin: 0 0 0 0;
+  }
+  body nav ul li {
+    float: none;
+    text-align: center;
+  }
+  body.page > div {
+    width: 100%;
+    margin: 10% 0 0 0;
+    position: static;
+  }
+  body.page div h1 {
+    font-size: 50px;
+  }
+  div.height400 {
+    height: auto;
+  }
+  div.height200 {
+    height: auto;
+  }
+  div.height300{
+    margin: 0 0 0 0 !important;
+    padding: 0 0 0 0;
+  }
+  div.height300 div {
+    margin: 0 0 0 0 !important;
+  }
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Lato';
@@ -35,6 +93,10 @@ nav a:hover, a.active {
 
 nav {
   float: left;
+}
+
+nav i {
+  display: none;
 }
 
 nav ul {
