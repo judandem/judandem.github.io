@@ -75,7 +75,7 @@ b {
   margin: 0 0 0 0;
   top: 0;
   color: #3D3531;
-  background: url(../images/background.jpg) no-repeat center center;
+  background: url(/images/background.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
