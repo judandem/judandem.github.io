@@ -3,6 +3,12 @@
     background: url('../images/background-iphone.jpg') no-repeat center center fixed;
     background-size: cover;
   }
+
+  body.page > b {
+    background: none;
+    background-image: url('../images/background-iphone.jpg');
+    background-size: cover;
+  }
 }
 
 @media (device-width : 768px) and (orientation : portrait) {
@@ -15,11 +21,6 @@
   body.page > div {
     width: 70%;
     margin: 0 0 0 -25%;
-  }
-
-  body > b {
-    background: url('../images/background-iphone.jpg') no-repeat center center fixed;
-    background-size: cover;
   }
 }
 
