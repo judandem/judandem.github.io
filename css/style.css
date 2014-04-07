@@ -1,6 +1,11 @@
-@media (max-device-height : 568px) and
-       (device-width : 320px) and
-       (orientation : portrait) {
+@media (max-device-height : 568px) and (orientation : landscape) {
+  body.home > div {
+    width: 60%;
+    font-size: 30px;
+    margin-top: 15% !important;
+  }
+}
+@media (max-device-height : 568px) and (min-device-width : 320px){
 
   body.home > div {
     width: 100%;
