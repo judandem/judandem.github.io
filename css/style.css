@@ -8,6 +8,10 @@
     margin-left: -50%;
     margin-top: 33%;
   }
+  body > b {
+    background: url('../images/background-iphone.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
   body nav {
     float: none;
     margin: 20px 0 0 0;
@@ -75,7 +79,7 @@ b {
   margin: 0 0 0 0;
   top: 0;
   color: #3D3531;
-  background: url(/images/background.jpg) no-repeat center center;
+  background: url('../images/background.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
