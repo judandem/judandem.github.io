@@ -1,3 +1,10 @@
+@media (device-width : 768px) {
+  body > b {
+    background: url('../images/background-iphone.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+}
+
 @media (device-width : 768px) and (orientation : portrait) {
   body.home > div {
     width: 60%;
@@ -9,6 +16,11 @@
     width: 70%;
     margin: 0 0 0 -25%;
   }
+
+  body > b {
+    background: url('../images/background-iphone.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
 }
 
 @media (max-device-height : 568px) and (orientation : landscape) {
@@ -16,6 +28,11 @@
     width: 60%;
     font-size: 30px;
     margin-top: 15% !important;
+  }
+
+  body > b {
+    background: url('../images/background-iphone.jpg') no-repeat center center fixed;
+    background-size: cover;
   }
 }
 @media (max-device-height : 568px) and (min-device-width : 320px){
