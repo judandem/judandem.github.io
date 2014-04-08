@@ -194,6 +194,7 @@ nav ul li a:hover, a.active {
   left: 50%;
   padding: 25px;
   margin-bottom: 100px;
+  border-radius: 5px;
 }
 .page h1 {
   margin: 0 0 25px 0;
