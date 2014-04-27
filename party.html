@@ -11,6 +11,15 @@
 
     <!-- Javascript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1-beta1/jquery.min.js"></script>
+    <script>
+      $(function(){
+          $('img').each(function(){
+            if($(this).data('funny')){
+              $('<img src="'+ $(this).data('funny') +'">').css('display', 'none').appendTo($('body'))
+            }
+          });
+      });
+    </script>
     <script src="js/site.js"></script>
 
     <!-- Favicon -->
@@ -33,24 +42,24 @@
     <div class="weddingparty">
       <h1>Wedding Party</h1>
           <ul>
-            <li><img src="images/Halli.jpg" onmouseover="this.src='images/Hallifuny.jpg'" onmouseout="this.src='images/Halli.jpg'"><span>Halli Henninger<br> The MOH</span></li>
-            <li><img src="images/Kristin.jpg" onmouseover="this.src='images/Kristinfunny.jpg'" onmouseout="this.src='images/Kristin.jpg'"><span>Kristin Richmond</span></li>
-            <li><img src="images/Whitney.jpg" onmouseover="this.src='images/Whitneyfunny.jpg'" onmouseout="this.src='images/Whitney.jpg'"><span>Whitney Chambers<br></span></li>
-            <li><img src="images/Elizabeth Anne.jpg" onmouseover="this.src='images/EAfunny.jpg'" onmouseout="this.src='images/Elizabeth Anne.jpg'"><span class="black">Elizabeth Watterson</span></li>
-            <li><img src="images/Haldeman.jpg" onmouseover="this.src='images/Haldemanfunny.jpg'" onmouseout="this.src='images/Haldeman.jpg'"><span>Whitney Haldeman</span></li>
-            <li><img src="images/Turri.jpg" onmouseover="this.src='images/Turrifunny.jpg'" onmouseout="this.src='images/Turri.jpg'"><span>Jessica Turri</span></li>
-            <li><img src="images/Melody.jpg" onmouseover="this.src='images/Melodyfunny1.jpg'" onmouseout="this.src='images/Melody.jpg'"><span>Melody Kitchens</span></li>
-            <li><img src="images/Laura%20Beth.jpg" onmouseover="this.src='images/LBfunny.jpg'" onmouseout="this.src='images/Laura Beth.jpg'"><span>Laura Beth Wilcher</span></li>
-            <li><img src="images/Lauren.jpg" onmouseover="this.src='images/Laurenfunny.jpg'" onmouseout="this.src='images/Lauren.jpg'"><span>Lauren Stephenson</span></li>
-            <li><img src="images/Roger.jpg" onmouseover="this.src='images/Rogerfunny.jpg'" onmouseout="this.src='images/Roger.jpg'"><span>Roger Stephenson<br> Best Man</span></li>
-            <li><img src="images/Dan.jpg" onmouseover="this.src='images/Danfunny.jpg'" onmouseout="this.src='images/Dan.jpg'"><span>Dan Stephenson <br> Best Man</span></li>
-            <li><img src="images/Josh.jpg" onmouseover="this.src='images/Joshfunny.jpg'" onmouseout="this.src='images/Josh.jpg'"><span>Josh Benton</span></li>
-            <li><img src="images/Philip.jpg" onmouseover="this.src='images/Philipfunny.jpg'" onmouseout="this.src='images/Philip.jpg'"><span  class="black">Philip Henninger</span></li>
-            <li><img src="images/Chandler.jpg" onmouseover="this.src='images/Chandlerfunny.jpg'" onmouseout="this.src='images/Chandler.jpg'"><span  class="black">Chandler Waits</span></li>
-            <li><img src="images/Mark.jpg" onmouseover="this.src='images/Markfunny.jpg'" onmouseout="this.src='images/Mark.jpg'"><span>Mark Kinney</span></li>
-            <li><img src="images/eric.jpg" onmouseover="this.src='images/Ericfunny.jpg'" onmouseout="this.src='images/eric.jpg'"><span  class="black">Eric Henninger</span></li>
-            <li><img src="images/tosin.jpg" onmouseover="this.src='images/tosin-funny.jpg'" onmouseout="this.src='images/tosin.jpg'"><span  class="">Tosin Scott<br>Flower Girl</span></li>
-            <li><img src="images/jenni.jpg" onmouseover="this.src='images/jenni-funny.jpg'" onmouseout="this.src='images/jenni.jpg'"><span  class="">Jenni Taylor<br>Flower Girl</span></li>
+            <li><img src="images/Halli.jpg" data-funny="images/Hallifuny.jpg" onmouseover="this.src='images/Hallifuny.jpg'" onmouseout="this.src='images/Halli.jpg'"><span>Halli Henninger<br> The MOH</span></li>
+            <li><img src="images/Kristin.jpg" data-funny="images/Kristinfunny.jpg" onmouseover="this.src='images/Kristinfunny.jpg'" onmouseout="this.src='images/Kristin.jpg'"><span>Kristin Richmond</span></li>
+            <li><img src="images/Whitney.jpg" data-funny="images/Whitneyfunny.jpg" onmouseover="this.src='images/Whitneyfunny.jpg'" onmouseout="this.src='images/Whitney.jpg'"><span>Whitney Chambers<br></span></li>
+            <li><img src="images/Elizabeth Anne.jpg" data-funny="images/EAfunny.jpg" onmouseover="this.src='images/EAfunny.jpg'" onmouseout="this.src='images/Elizabeth Anne.jpg'"><span class="black">Elizabeth Watterson</span></li>
+            <li><img src="images/Haldeman.jpg" data-funny="images/Haldemanfunny.jpg" onmouseover="this.src='images/Haldemanfunny.jpg'" onmouseout="this.src='images/Haldeman.jpg'"><span>Whitney Haldeman</span></li>
+            <li><img src="images/Turri.jpg" data-funny="images/Turrifunny.jpg" onmouseover="this.src='images/Turrifunny.jpg'" onmouseout="this.src='images/Turri.jpg'"><span>Jessica Turri</span></li>
+            <li><img src="images/Melody.jpg" data-funny="images/Melodyfunny1.jpg" onmouseover="this.src='images/Melodyfunny1.jpg'" onmouseout="this.src='images/Melody.jpg'"><span>Melody Kitchens</span></li>
+            <li><img src="images/Laura%20Beth.jpg" data-funny="images/LBfunny.jpg" onmouseover="this.src='images/LBfunny.jpg'" onmouseout="this.src='images/Laura Beth.jpg'"><span>Laura Beth Wilcher</span></li>
+            <li><img src="images/Lauren.jpg" data-funny="images/Laurenfunny.jpg" onmouseover="this.src='images/Laurenfunny.jpg'" onmouseout="this.src='images/Lauren.jpg'"><span>Lauren Stephenson</span></li>
+            <li><img src="images/Roger.jpg" data-funny="images/Rogerfunny.jpg" onmouseover="this.src='images/Rogerfunny.jpg'" onmouseout="this.src='images/Roger.jpg'"><span>Roger Stephenson<br> Best Man</span></li>
+            <li><img src="images/Dan.jpg" data-funny="images/Danfunny.jpg" onmouseover="this.src='images/Danfunny.jpg'" onmouseout="this.src='images/Dan.jpg'"><span>Dan Stephenson <br> Best Man</span></li>
+            <li><img src="images/Josh.jpg" data-funny="images/Joshfunny.jpg" onmouseover="this.src='images/Joshfunny.jpg'" onmouseout="this.src='images/Josh.jpg'"><span>Josh Benton</span></li>
+            <li><img src="images/Philip.jpg" data-funny="images/Philipfunny.jpg" onmouseover="this.src='images/Philipfunny.jpg'" onmouseout="this.src='images/Philip.jpg'"><span  class="black">Philip Henninger</span></li>
+            <li><img src="images/Chandler.jpg" data-funny="images/Chandlerfunny.jpg" onmouseover="this.src='images/Chandlerfunny.jpg'" onmouseout="this.src='images/Chandler.jpg'"><span  class="black">Chandler Waits</span></li>
+            <li><img src="images/Mark.jpg" data-funny="images/Markfunny.jpg" onmouseover="this.src='images/Markfunny.jpg'" onmouseout="this.src='images/Mark.jpg'"><span>Mark Kinney</span></li>
+            <li><img src="images/eric.jpg" data-funny="images/Ericfunny.jpg" onmouseover="this.src='images/Ericfunny.jpg'" onmouseout="this.src='images/eric.jpg'"><span  class="black">Eric Henninger</span></li>
+            <li><img src="images/tosin.jpg" data-funny="images/tosin-funny.jpg" onmouseover="this.src='images/tosin-funny.jpg'" onmouseout="this.src='images/tosin.jpg'"><span  class="">Tosin Scott<br>Flower Girl</span></li>
+            <li><img src="images/jenni.jpg" data-funny="images/jenni-funny.jpg" onmouseover="this.src='images/jenni-funny.jpg'" onmouseout="this.src='images/jenni.jpg'"><span  class="">Jenni Taylor<br>Flower Girl</span></li>
           </ul> 
     </div>
   </body>
